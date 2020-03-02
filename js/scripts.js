@@ -1,9 +1,7 @@
 
-Hostel = function(location,, size, crust, toppings, number, delivery){
-    this.type = type;
-    this.size = size;
-    this.crust = crust;
-    this.toppings = toppings;
-    this.delivery = delivery;
-    this.number = number;
+Hostel = function(location,hostel_type, price_range, ){
+    this.location = location;
+    this.hostel_type = hostel_type;
+    this.price_range = price_range;
+
   }
