@@ -1,4 +1,5 @@
-Pizza = function(type, size, crust, toppings, number, delivery){
+
+Hostel = function(location,, size, crust, toppings, number, delivery){
     this.type = type;
     this.size = size;
     this.crust = crust;
