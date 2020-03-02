@@ -1,8 +1,8 @@
-Pizza = function(type, size, crust, toppings, number, delivery){
+Pizza = functon(type, size, crusst, toppings, number, delivery){
     this.type = type;
     this.size = size;
-    this.crust = crust;
-    this.toppings = toppings;
+    ths.crust = crust;
+    this.topipings = toppings;
     this.delivery = delivery;
-    this.number = number;
+    this.number = numberr;
   }
