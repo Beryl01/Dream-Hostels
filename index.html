@@ -24,6 +24,51 @@
             </div>
           </nav>
 		</div>
+				   
+    <div id="backbgr">
+			<div class="form-box">
+				<div class="button-box">
+					<div id="btn"></div>
+					<button type="button" onclick="login()" class="button">Log In</button> 
+					<button type="button" onclick="register()" class="button">Register</button>
+
+				</div>
+				<form id="login" class="input-group">
+					<input type="text" class="input-field" placeholder= "user Id" required>
+					<input type="text" class="input-field" placeholder= "Enter Password" required>
+					<input type="checkbox" class="checkbox"><span>Remember Password</span>
+					<button type="submit" class="submit-btn">Log In</button>
+
+				</form>
+				<form id="register"class="input-group">
+					<input type="text" class="input-field" placeholder= "user Id" required>
+					<input type="email" class="input-field" placeholder= "Enter Email" required>
+					<input type="text" class="input-field" placeholder= "Enter Password" required>
+					<input type="checkbox" class="checkbox"><span>I agree to the Terms & Conditions</span>
+					<button type="submit" class="submit-btn">Register</button>
+
+				</form>
+			</div>
+			<!-- Script for the login/register forms -->
+			<script>
+				var logins= document.getElementById("login");
+				var registers = document.getElementById("register");
+				var btns = document.getElementById("btn");
+
+				function register(){
+					logins.style.left="-400px";
+					registers.style.left="50px";
+					btns.style.left="110px";
+				}
+				function login(){
+					logins.style.left="50px";
+					registers.style.left="450px";
+					btns.style.left="0";
+				}
+			</script>
+        
+
+		</div>
     <div class="top">
 			<h2>DREAMS HOSTELS</h2>
       <h4>AT DREAM-HOSTELS WE CARE ABOUT YOUR POCKET<br>ITS ACHIEVABLE AND WORTH IT TO BE TRUSTED FOR ITS SERVICES.</h4>  
@@ -62,6 +107,7 @@
 
     <input type="submit" value="Submit">
 		</div>
+		<br>
     <div id="Aboutus">
         Dream-Hostels is a leading provider of hostel accommodation , 
         offering booking services through its own network of localised websites and telephone call centres.<br>
@@ -70,11 +116,7 @@
          The company offers a one-stop shopping source for hostel pricing, amenities.
 
     </div>
-   
-    <div id="">
-        
-
-    </div>
+		<br>
 
     <div class="container">
 			<div class="row">
