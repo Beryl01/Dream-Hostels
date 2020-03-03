@@ -8,13 +8,18 @@ html{
 .top h2{
     margin:20px;
 }
+
+header.masthead {
+    text-align: center;
+    color: white;
+   background-color: black;
+  }
+
 #backgr{
 height:100% ;
 width:100%;
-background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://bit.ly/39k89HZ');
-background-position: center;
-background-size: cover;
-/* position:absolute; */
+color: black;
+
 
 }
 .form-box{
