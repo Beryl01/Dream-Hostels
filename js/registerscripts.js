@@ -1,7 +1,10 @@
-const form = document.querySelector('form')
-const input = document.getElementById('item')
+const form = document.querySelector('form');
+const input = document.getElementById('inputUsername');
+const inputTwo = document.getElementById('inputEmail');
+const inputThree = document.getElementById('inputPassword');
 const ul = document.querySelector('ul')
 const button = document.querySelector('button')
+
 //let items;
 //
 //if(localStorage.getItem('items')) {
