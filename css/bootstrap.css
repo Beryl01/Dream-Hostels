@@ -10809,7 +10809,7 @@ header.masthead .intro-text .intro-heading {
 
 section#contact {
   background-color: #212529;
-  background-image: url("../img/map-image.png");
+  background-image: linear-gradient(rgba(47, 23, 15, .65), rgba(47, 23, 15, .65)),url("../Images/background2.jpg");
   background-repeat: no-repeat;
   background-position: center;
 }

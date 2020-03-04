@@ -15,6 +15,26 @@ function login() {
 }
 
 
+$(document).ready(function(){
+  $("#hide").ready(function(){
+    $("#wrapping").hide();
+  });
+  $("#hide").click(function(){
+    $("#wrapping").hide();
+  });
+  $("#show").click(function(){
+    $("#wrapping").show();
+  });
+});
+
+$(document).ready(function(){
+  $(".portfolio-link").click(function(){
+    $(".portfolio-caption").slideToggle("slow");
+  });
+});
+
+
+
 $(function() {
 
   $("#contactForm input,#contactForm textarea").jqBootstrapValidation({
