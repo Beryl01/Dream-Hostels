@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-function Hostel(location, hostel_type, price_range, ){
-=======
 var logins= document.getElementById("login");
 				var registers = document.getElementById("register");
 				var btns = document.getElementById("btn");
@@ -92,9 +89,7 @@ var logins= document.getElementById("login");
           $('#success').html('');
         });
         
-        
-Hostel = function(location,hostel_type, price_range, ){
->>>>>>> e2b3f6247188b0736975132eaa5d6f536ce7b32d
+function Hostel(location, hostel_type, price_range, ){
     this.location = location;
     this.hostel_type = hostel_type;
     this.price_range = price_range;
