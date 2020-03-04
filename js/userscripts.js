@@ -1,0 +1,110 @@
+const form = document.querySelector('form');
+const input = document.getElementById('inputUsername');
+const inputTwo = document.getElementById('inputEmail');
+const inputThree = document.getElementById('inputPassword');
+const ul = document.querySelector('ul')
+const button = document.querySelector('button')
+
+//let items;
+//
+//if(localStorage.getItem('items')) {
+//  items = JSON.parse(localStorage.getItem('items'));
+//}else{
+//  items = [];
+//}
+let usernamesArray = localStorage.getItem('usernames') ?
+JSON.parse(localStorage.getItem('usernames')) : []
+
+let emailsArray = localStorage.getItem('emails') ?
+JSON.parse(localStorage.getItem('emails')) : []
+
+let passwordsArray = localStorage.getItem('passwords') ?
+JSON.parse(localStorage.getItem('passwords')) : []
+
+let checkEmailsArray = localStorage.getItem('checkEmails') ?
+JSON.parse(localStorage.getItem('checkEmails')) : []
+
+let checkPasswordsArray = localStorage.getItem('checkPasswords') ?
+JSON.parse(localStorage.getItem('checkPasswords')) : []
+
+const liMaker = text => {
+  const li = document.createElement('li')
+  li.textContent = text;
+  ul.appendChild(li);
+}
+
+const liMakerTwo = text => {
+  const liTwo = document.createElement('li')
+  li.textContent = text;
+  ul.appendChild(li);
+}
+
+const liMakerThree = text => {
+  const liThree = document.createElement('li')
+  li.textContent = text;
+  ul.appendChild(li);
+}
+//let usernamesArray = []
+
+localStorage.setItem('usernames', JSON.stringify(usernamesArray));
+const data = JSON.parse(localStorage.getItem('usernames'))
+
+//let emailsArray = []
+
+localStorage.setItem('emails', JSON.stringify(emailsArray));
+const dataTwo = JSON.parse(localStorage.getItem('emails'))
+
+//let passwordsArray = []
+
+localStorage.setItem('passwords', JSON.stringify(passwordsArray));
+const dataThree = JSON.parse(localStorage.getItem('passwords'))
+
+//let checkEmailsArray = []
+
+localStorage.setItem('checkEmails', JSON.stringify(checkEmailsArray));
+const dataFour = JSON.parse(localStorage.getItem('checkEmails'))
+
+//let checkPasswordsArray = []
+
+localStorage.setItem('checkPasswords', JSON.stringify(checkPasswordsArray));
+const dataFive = JSON.parse(localStorage.getItem('checkPasswords'))
+
+form.addEventListener('submit', function(e){
+  e.preventDefault()
+
+  checkEmailsArray.push(inputTwo.value)
+  localStorage.setItem('checkEmails', JSON.stringify(checkEmailsArray));
+
+  checkPasswordsArray.push(inputThree.value)
+  localStorage.setItem('checkPasswords', JSON.stringify(checkPasswordsArray));
+
+  usernamesArray.push(input.value);
+  localStorage.setItem('usernames', JSON.stringify(usernamesArray));
+
+  emailsArray.push(inputTwo.value)
+  localStorage.setItem('emails', JSON.stringify(emailsArray));
+
+  passwordsArray.push(inputThree.value)
+  localStorage.setItem('passwords', JSON.stringify(passwordsArray));
+
+  liMaker(input.value);
+  input.value = '';
+
+  liMakerTwo(input.value);
+  inputTwo.value = '';
+
+  liMakerThree(input.value);
+  inputThree.value = '';
+
+});
+
+data.forEach(item => {
+    liMaker(item);
+});
+
+button.addEventListener('click', function(){
+  localStorage.clear();
+  while (ul.firstChild){
+    ul.removeChild(ul.firstChild);
+  }
+})
