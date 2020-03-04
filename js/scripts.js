@@ -3,6 +3,7 @@ function Hostel(location,hostel_type, price_range, ){
     this.location = location;
     this.hostel_type = hostel_type;
     this.price_range = price_range;
+    this.amenities = [];
 
 }
   let hostel1 = new Hostel("nairobi", "mixed", 5500);
