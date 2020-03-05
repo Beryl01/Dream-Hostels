@@ -4,7 +4,7 @@ $("#myForm").submit(function(e) {
   let validPassword = passwordsArray.includes($("#inputPassword").val());
 
   if (validEmail && validPassword){
-    window.location.href = './database.html';
+    window.location.href = './index.html';
     }else{
       alert('invalid username password');
     }
