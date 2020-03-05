@@ -1,15 +1,15 @@
-$("#myForm").submit(function(e) {
-  e.preventDefault();
-  if ($("#inputEmail").val() != '' && $("#inputPassword").val() != '') {
-        if ($("#inputEmail").val() == 'quis@google.com' && $("#inputPassword").val() == 'quis') {
-          window.location.href = './database.html';
-        } else {
-            alert('invalid username password');
-        }
-  } else {
-    alert('username or password cann\'t be blank');
-  }
-});
+//$("#myForm").submit(function(e) {
+//  e.preventDefault();
+//  if ($("#inputEmail").val() != '' && $("#inputPassword").val() != '') {
+//        if ($("#inputEmail").val() == 'quis@google.com' && $("#inputPassword").val() == 'quis') {
+//          window.location.href = './database.html';
+//        } else {
+//            alert('invalid username password');
+//        }
+//  } else {
+//    alert('username or password cann\'t be blank');
+//  }
+//});
 
 const form = document.querySelector('form');
 const input = document.getElementById('inputUsername');
@@ -33,23 +33,6 @@ JSON.parse(localStorage.getItem('checkEmails')) : []
 let checkPasswordsArray = localStorage.getItem('checkPasswords') ?
 JSON.parse(localStorage.getItem('checkPasswords')) : []
 
-const liMaker = text => {
-  const li = document.createElement('li')
-  li.textContent = text;
-  ul.appendChild(li);
-}
-
-const liMakerTwo = text => {
-  const liTwo = document.createElement('li')
-  li.textContent = text;
-  ul.appendChild(li);
-}
-
-const liMakerThree = text => {
-  const liThree = document.createElement('li')
-  li.textContent = text;
-  ul.appendChild(li);
-}
 //let usernamesArray = []
 
 localStorage.setItem('usernames', JSON.stringify(usernamesArray));
@@ -94,9 +77,15 @@ form.addEventListener('submit', function(e){
   localStorage.setItem('passwords', JSON.stringify(passwordsArray));
 });
 
-//button.addEventListener('click', function(){
-//  localStorage.clear();
-//  while (ul.firstChild){
-//    ul.removeChild(ul.firstChild);
+//$("#myForm").submit(function(e) {
+//  e.preventDefault();
+//  if ($("#inputEmail").val() != '' && $("#inputPassword").val() != '') {
+//        if ($("#inputEmail").val() == 'quis@google.com' && $("#inputPassword").val() == 'quis') {
+//          window.location.href = './database.html';
+//        } else {
+//            alert('invalid username password');
+//        }
+//  } else {
+//    alert('username or password cann\'t be blank');
 //  }
-//})
+//});
