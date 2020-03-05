@@ -4,7 +4,6 @@ const inputTwo = document.getElementById('inputEmail');
 const inputThree = document.getElementById('inputPassword');
 const ul = document.querySelector('ul')
 const button = document.querySelector('button')
-
 //let items;
 //
 //if(localStorage.getItem('items')) {
@@ -14,31 +13,39 @@ const button = document.querySelector('button')
 //}
 let itemsArray = localStorage.getItem('items') ?
 JSON.parse(localStorage.getItem('items')) : []
-
 const liMaker = text => {
   const li = document.createElement('li')
   li.textContent = text;
   ul.appendChild(li);
 }
-
+const liMakerTwo = text => {
+  const liTwo = document.createElement('li')
+  li.textContent = text;
+  ul.appendChild(li);
+}
+const liMakerThree = text => {
+  const liThree = document.createElement('li')
+  li.textContent = text;
+  ul.appendChild(li);
+}
+let itemsArray = []
 
 localStorage.setItem('items', JSON.stringify(itemsArray));
 const data = JSON.parse(localStorage.getItem('items'))
-
 form.addEventListener('submit', function(e){
   e.preventDefault()
-
   itemsArray.push(input.value);
   localStorage.setItem('items', JSON.stringify(itemsArray));
-
   liMaker(input.value);
   input.value = '';
+  liMakerTwo(input.value);
+  inputTwo.value = '';
+  liMakerThree(input.value);
+  inputThree.value = '';
 });
-
 data.forEach(item => {
     liMaker(item);
 });
-
 button.addEventListener('click', function(){
   localStorage.clear();
   while (ul.firstChild){

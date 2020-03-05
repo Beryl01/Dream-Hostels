@@ -2,27 +2,27 @@ html {
     margin: 0;
     padding: 0;
   }
-  
+
   .top {
     text-align: center;
   }
-  
+
   .top h2 {
     margin: 20px;
   }
-  
+
   header.masthead {
     text-align: center;
     color: white;
     background-color: black;
   }
-  
-  
+
+
   #backgr {
     height: 100%;
     width: 100%;
   }
-  
+
   .form-box {
     width: 380px;
     height: 480px;
@@ -32,7 +32,7 @@ html {
     padding: 5px;
     overflow-x: hidden;
   }
-  
+
   .button-box {
     width: 220px;
     margin: 35px auto;
@@ -40,7 +40,7 @@ html {
     box-shadow: 0 0 20px 9px #ff61241f;
     border-radius: 30px;
   }
-  
+
   .button {
     /* padding-left:30px;
           padding-bottom:10px;
@@ -53,7 +53,7 @@ html {
     position: relative;
     display: inline-block;
   }
-  
+
   #btn {
     top: 0;
     left: 0;
@@ -64,14 +64,14 @@ html {
     border-radius: 30px;
     transition: .5s;
   }
-  
+
   .input-group {
     top: 180px;
     position: absolute;
     width: 280px;
     transition: .5s;
   }
-  
+
   .input-field {
     width: 1000%;
     padding: 10px 0;
@@ -81,7 +81,7 @@ html {
     outline: none;
     background: transparent;
   }
-  
+
   .submit-btn {
     width: 85%;
     padding: 10px 30px;
@@ -93,11 +93,11 @@ html {
     outline: none;
     border-radius: 30px;
   }
-  
+
   .check-box {
     margin: 30px 10px 30px 0;
   }
-  
+
   span {
     color: #777;
     font-size: 12px;
@@ -105,12 +105,50 @@ html {
     /* bottom: 30px; */
     /* position:absolute */
   }
-  
+
   #login {
     left: 50px;
   }
-  
+
   #register {
     left: 450px;
   }
-  
+  .nairobi{
+
+  }
+  .nakuru{
+
+  }
+  .mombasa{
+
+  }
+  .meru{
+
+  }
+  .eldoret{
+
+  }
+  .kisumu{
+
+  }
+  .male{
+
+  }
+  .female{
+
+  }
+  .mixed{
+
+  }
+  .5001-10000{
+
+  }
+  .10001_20000{
+
+  }
+  .0-5000{
+
+  }
+  .20001{
+
+  }
