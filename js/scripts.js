@@ -124,6 +124,7 @@ function Student(name, age, phone_number, school, gender){
   let hostel19 = new Hostel("nairobi", "mixed", 3500);
   let hostel20 = new Hostel("mombasa", "male", 5000);
   let hostel21 = new Hostel("nairobi", "mixed", 10000);
+  let hostel22 = new Hostel("nairobi", "female", 7500);
   let hostel23 = new Hostel("kisumu", "male", 12000);
   let hostel24 = new Hostel("eldoret", "female", 18500);
   let hostel25 = new Hostel("meru", "male", 8000);
@@ -143,6 +144,7 @@ function Student(name, age, phone_number, school, gender){
   let hostel39 = new Hostel("nakuru", "mixed", 7500);
   let hostel40 = new Hostel("meru", "male", 14500);
   let hostel41 = new Hostel("eldoret", "female", 9500);
+  let hostel42 = new Hostel("meru", "female", 8500);
   let hostel43 = new Hostel("nairobi", "female", 15500);
   let hostel44 = new Hostel("nairobi", "mixed", 25500);
   let hostel45 = new Hostel("nairobi", "male", 9500);

@@ -1,3 +1,16 @@
+$("#myForm").submit(function(e) {
+  e.preventDefault();
+  if ($("#inputEmail").val() != '' && $("#inputPassword").val() != '') {
+        if ($("#inputEmail").val() == 'quis@google.com' && $("#inputPassword").val() == 'quis') {
+          window.location.href = './database.html';
+        } else {
+            alert('invalid username password');
+        }
+  } else {
+    alert('username or password cann\'t be blank');
+  }
+});
+
 const form = document.querySelector('form');
 const input = document.getElementById('inputUsername');
 const inputTwo = document.getElementById('inputEmail');
@@ -5,13 +18,6 @@ const inputThree = document.getElementById('inputPassword');
 const ul = document.querySelector('ul')
 const button = document.querySelector('button')
 
-//let items;
-//
-//if(localStorage.getItem('items')) {
-//  items = JSON.parse(localStorage.getItem('items'));
-//}else{
-//  items = [];
-//}
 let usernamesArray = localStorage.getItem('usernames') ?
 JSON.parse(localStorage.getItem('usernames')) : []
 
@@ -86,25 +92,11 @@ form.addEventListener('submit', function(e){
 
   passwordsArray.push(inputThree.value)
   localStorage.setItem('passwords', JSON.stringify(passwordsArray));
-
-  liMaker(input.value);
-  input.value = '';
-
-  liMakerTwo(input.value);
-  inputTwo.value = '';
-
-  liMakerThree(input.value);
-  inputThree.value = '';
-
 });
 
-data.forEach(item => {
-    liMaker(item);
-});
-
-button.addEventListener('click', function(){
-  localStorage.clear();
-  while (ul.firstChild){
-    ul.removeChild(ul.firstChild);
-  }
-})
+//button.addEventListener('click', function(){
+//  localStorage.clear();
+//  while (ul.firstChild){
+//    ul.removeChild(ul.firstChild);
+//  }
+//})
