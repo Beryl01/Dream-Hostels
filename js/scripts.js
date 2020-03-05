@@ -16,8 +16,8 @@ $(document).ready(function() {
 	});
   });
   
-
-function Hostel(location, hostel_type, price_range, ) {
+  
+  function Hostel(location, hostel_type, price_range, ) {
 	this.location = location;
 	this.hostel_type = hostel_type;
 	this.price_range = price_range;
@@ -121,11 +121,11 @@ function Hostel(location, hostel_type, price_range, ) {
 		});
 	  }
 	});
-	
-       
+  
+  
 	$("button.portfolio-item").click(function() {
-		alert("Thank you.You have successfully booked a hostel. One of our agents shall be in touch with you.");
+	  alert("Thank you.You have successfully booked a hostel. One of our agents shall be in touch with you.");
 	});
-      
+  
   });
   

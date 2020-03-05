@@ -1,16 +1,3 @@
-//$("#myForm").submit(function(e) {
-//  e.preventDefault();
-//  if ($("#inputEmail").val() != '' && $("#inputPassword").val() != '') {
-//        if ($("#inputEmail").val() == 'quis@google.com' && $("#inputPassword").val() == 'quis') {
-//          window.location.href = './database.html';
-//        } else {
-//            alert('invalid username password');
-//        }
-//  } else {
-//    alert('username or password cann\'t be blank');
-//  }
-//});
-
 const form = document.querySelector('form');
 const input = document.getElementById('inputUsername');
 const inputTwo = document.getElementById('inputEmail');
@@ -19,19 +6,19 @@ const ul = document.querySelector('ul')
 const button = document.querySelector('button')
 
 let usernamesArray = localStorage.getItem('usernames') ?
-JSON.parse(localStorage.getItem('usernames')) : []
+  JSON.parse(localStorage.getItem('usernames')) : []
 
 let emailsArray = localStorage.getItem('emails') ?
-JSON.parse(localStorage.getItem('emails')) : []
+  JSON.parse(localStorage.getItem('emails')) : []
 
 let passwordsArray = localStorage.getItem('passwords') ?
-JSON.parse(localStorage.getItem('passwords')) : []
+  JSON.parse(localStorage.getItem('passwords')) : []
 
 let checkEmailsArray = localStorage.getItem('checkEmails') ?
-JSON.parse(localStorage.getItem('checkEmails')) : []
+  JSON.parse(localStorage.getItem('checkEmails')) : []
 
 let checkPasswordsArray = localStorage.getItem('checkPasswords') ?
-JSON.parse(localStorage.getItem('checkPasswords')) : []
+  JSON.parse(localStorage.getItem('checkPasswords')) : []
 
 //let usernamesArray = []
 
@@ -58,7 +45,7 @@ const dataFour = JSON.parse(localStorage.getItem('checkEmails'))
 localStorage.setItem('checkPasswords', JSON.stringify(checkPasswordsArray));
 const dataFive = JSON.parse(localStorage.getItem('checkPasswords'))
 
-form.addEventListener('submit', function(e){
+form.addEventListener('submit', function(e) {
   e.preventDefault()
 
   checkEmailsArray.push(inputTwo.value)
