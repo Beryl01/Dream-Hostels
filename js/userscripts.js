@@ -1,3 +1,16 @@
+//$("#myForm").submit(function(e) {
+//  e.preventDefault();
+//  if ($("#inputEmail").val() != '' && $("#inputPassword").val() != '') {
+//        if ($("#inputEmail").val() == 'quis@google.com' && $("#inputPassword").val() == 'quis') {
+//          window.location.href = './database.html';
+//        } else {
+//            alert('invalid username password');
+//        }
+//  } else {
+//    alert('username or password cann\'t be blank');
+//  }
+//});
+
 const form = document.querySelector('form');
 const input = document.getElementById('inputUsername');
 const inputTwo = document.getElementById('inputEmail');
