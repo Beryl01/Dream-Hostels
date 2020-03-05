@@ -128,4 +128,19 @@ $(document).ready(function() {
 	});
   
   });
+
+  
+//form function
+function myMessage() {
+	var name = document.getElementsByName("FNAME").value; //mce-FNAME
+	var email = document.getElementsByName("EMAIL").value; //mce-EMAIL
+	var message = document.getElementsByName("MMERGE2").value; //mce-MMERGE2
+  
+	if (email !== "" && name !== "" && message !== "") {
+	  // document.getElementById("pop").innerHTML =
+	  alert("Hello, we have received your message. we wiil reach out to you soon");
+	} else if (email == "" || name !== "" || message !== "") {
+	  alert("Please fill in all the details");
+	}
+  }
   
