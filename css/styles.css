@@ -9,6 +9,9 @@ body {
 
 .top {
   text-align: center;
+  display: inline;
+  margin-left: 10px;
+  font-size: 25px;
 }
 
 .top1 {
@@ -72,7 +75,7 @@ header.masthead {
 }
 
 .card {
-  height: 570px;
+  height: 470px;
   width: 500px;
   background-color: rgba(0, 0, 0, 0.5) !important;
 }

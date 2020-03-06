@@ -105,16 +105,17 @@ $(document).ready(function() {
 	  types = types.filter(item => item !== type)
 	  costs = costs.filter(item => item !== cost)
 	  console.log(location);
-	  if (location) {
-		locations.forEach((location) => {
-		  $("." + location).css("filter", "brightness(25%)");
-		});
-	  }
 	  if (type) {
 		types.forEach((type) => {
 		  $("." + type).css("filter", "brightness(25%)");
 		});
 	  }
+	  if (location) {
+		locations.forEach((location) => {
+		  $("." + location).css("filter", "brightness(25%)");
+		});
+	  }
+	  
 	  if (cost) {
 		costs.forEach((cost) => {
 		  $("." + cost).css("filter", "brightness(25%)");
