@@ -1,22 +1,4 @@
-$(document).ready(function() {
-	$("#hide").ready(function() {
-	  $("#wrapping").hide();
-	});
-	$("#hide").click(function() {
-	  $("#wrapping").hide();
-	});
-	$("#show").click(function() {
-	  $("#wrapping").show();
-	});
-  });
-  
-  $(document).ready(function() {
-	$(".portfolio-link").click(function() {
-	  $(".portfolio-caption").slideToggle("slow");
-	});
-  });
-  
-  
+
   function Hostel(location, hostel_type, price_range, ) {
 	this.location = location;
 	this.hostel_type = hostel_type;
@@ -76,23 +58,6 @@ $(document).ready(function() {
   let hostel44 = new Hostel("nairobi", "mixed", 25500);
   let hostel45 = new Hostel("nairobi", "male", 9500);
   
-  $(document).ready(function() {
-	var logins = document.getElementById("login");
-	var registers = document.getElementById("register");
-	var btns = document.getElementById("btn");
-  
-	function register() {
-	  logins.style.left = "-400px";
-	  registers.style.left = "50px";
-	  btns.style.left = "110px";
-	}
-  
-	function login() {
-	  logins.style.left = "50px";
-	  registers.style.left = "450px";
-	  btns.style.left = "0";
-	}
-  
 	$("#filter-btn").click(function() {
 	  event.preventDefault();
 	  let locations = ["nairobi", "mombasa", "kisumu", "meru", "eldoret", "nakuru"]
@@ -127,21 +92,5 @@ $(document).ready(function() {
 	$("button.portfolio-item").click(function() {
 	  alert("Thank you.You have successfully booked a hostel. One of our agents shall be in touch with you.");
 	});
-  
-  });
 
-  
-//form function
-function myMessage() {
-	var name = document.getElementsByName("FNAME").value; //mce-FNAME
-	var email = document.getElementsByName("EMAIL").value; //mce-EMAIL
-	var message = document.getElementsByName("MMERGE2").value; //mce-MMERGE2
-  
-	if (email !== "" && name !== "" && message !== "") {
-	  // document.getElementById("pop").innerHTML =
-	  alert("Hello, we have received your message. we wiil reach out to you soon");
-	} else if (email == "" || name !== "" || message !== "") {
-	  alert("Please fill in all the details");
-	}
-  }
   
